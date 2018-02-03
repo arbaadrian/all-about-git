@@ -1,2 +1,2 @@
 # all-about-git
-a repository containing my understanding of git and git commands
+A repository containing my understanding of git and git commands
