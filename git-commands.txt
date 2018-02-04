@@ -1,15 +1,28 @@
 
 
+version 1.0
 
-
-Switching to a remote branch and adding a file:
+		### Switching to a remote branch and adding a file:
 
 git branch
 	# this will show only the branch you are on (i.e. master), not the remote branch
+
 git checkout --track origin/<remote-branch>
 	# this will create a local branch from the remote branch specified (only if branch doesn't exits locally)
 
+echo "text" > file.txt
+	# create a new file
 
+git add file.txt
+	# stage the file in the git index
+
+git commit -m "adding the file.txt file to the repo"
+	# commit the file so that it is ready for pushing into the repo
+
+git push origin
+	# push the new commit to the repo
+
+		### Switch to a local branch
 
 git checkout <branch>
 	# allows to switch between (or even create) local branches
