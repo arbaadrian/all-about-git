@@ -27,4 +27,6 @@ git push origin
 git checkout <branch>
 	# allows to switch between (or even create) local branches
 
+		### Tagging a commit
+
 
