@@ -1,6 +1,6 @@
 
 
-version 1.0
+version 1.2
 
 		### Switching to a remote branch and adding a file:
 
@@ -27,6 +27,17 @@ git push origin
 git checkout <branch>
 	# allows to switch between (or even create) local branches
 
-		### Tagging a commit
+		### Tagging a branch
+	# tagging a branch means tagging the last commit of that branch
 
+git tag -a <tag_name> <sha1-of-commit> -m "tag message"
+	# assigns a tag name to the sha1 of a specific commit and also a message for that tag
 
+git tag <tag_name>
+	# tags the last commit of the current branch
+
+git tag <tag_name> <branch>
+	# tags the last commit of the respective branch
+
+git push --tags origin
+	# pushes the tags to the repo
