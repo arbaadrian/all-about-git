@@ -1,7 +1,5 @@
 
 
-version 1.2
-
 		### Switching to a remote branch and adding a file:
 
 git branch
@@ -41,3 +39,17 @@ git tag <tag_name> <branch>
 
 git push --tags origin
 	# pushes the tags to the repo
+
+		### Deleting a tag
+
+git push origin :<tag_name>
+	# pushes an empty refference to the remote tag name
+
+git tag --delete <tag_name>
+	# deletes the local tag
+
+git log
+	# to check the current commits - if it has a tag or not after this operation
+
+git tag
+	# to check current tags
