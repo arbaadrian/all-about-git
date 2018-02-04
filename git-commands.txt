@@ -53,3 +53,14 @@ git log
 
 git tag
 	# to check current tags
+
+		### Create remote branch from master
+
+git checkout -b <branch_name> origin/master
+	# creates a remote branch on local from the master branch and switches to it
+
+git add .
+git commit -m "bla"
+
+git push origin <branch_name>
+	# to push changes to server
