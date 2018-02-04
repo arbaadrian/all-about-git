@@ -1,0 +1,17 @@
+
+
+
+
+Switching to a remote branch and adding a file:
+
+git branch
+	# this will show only the branch you are on (i.e. master), not the remote branch
+git checkout --track origin/<remote-branch>
+	# this will create a local branch from the remote branch specified (only if branch doesn't exits locally)
+
+
+
+git checkout <branch>
+	# allows to switch between (or even create) local branches
+
+
